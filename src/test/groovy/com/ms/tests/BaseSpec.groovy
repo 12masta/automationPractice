@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.ChromeDriverManager
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver
 import spock.lang.Specification
+import java.util.concurrent.TimeUnit
 
 class BaseSpec extends Specification{
     protected WebDriver driver
