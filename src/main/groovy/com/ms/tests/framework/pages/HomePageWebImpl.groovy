@@ -1,12 +1,14 @@
 package com.ms.tests.framework.pages
 
-class HomePageWebImpl implements HomePage {
+import org.openqa.selenium.WebDriver
 
-    HomePageWebImpl(){
+class HomePageWebImpl extends BasePageObjectImpl implements HomePage, BasePageObject {
 
+    HomePageWebImpl(WebDriver driver){
+        super(driver)
     }
 
     boolean isLoaded() {
-        return false
+        false
     }
 }
