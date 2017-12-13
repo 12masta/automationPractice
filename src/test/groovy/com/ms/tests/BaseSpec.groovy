@@ -13,7 +13,6 @@ class BaseSpec extends Specification{
         ChromeDriverManager.getInstance().setup()
         driver = new ChromeDriver()
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS)
-        driver.manage().window().maximize()
         driver.get("http://automationpractice.com")
     }
 
