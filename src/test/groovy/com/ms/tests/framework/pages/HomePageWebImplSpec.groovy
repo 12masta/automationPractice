@@ -2,9 +2,11 @@ package com.ms.tests.framework.pages
 
 import com.ms.tests.BaseSpec
 
+import java.lang.Void as TestCase
+
 class HomePageWebImplSpec extends BaseSpec {
 
-    def "asd"(){
+    TestCase "Is home page loaded"(){
         when:
         def homePage = new HomePageWebImpl(driver)
 

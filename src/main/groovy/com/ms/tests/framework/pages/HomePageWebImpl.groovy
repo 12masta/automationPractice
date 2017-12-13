@@ -1,5 +1,6 @@
 package com.ms.tests.framework.pages
 
+import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebDriver
 
 class HomePageWebImpl extends BasePageObjectImpl implements HomePage, BasePageObject {
@@ -9,6 +10,6 @@ class HomePageWebImpl extends BasePageObjectImpl implements HomePage, BasePageOb
     }
 
     boolean isLoaded() {
-        false
+        return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete")
     }
 }
